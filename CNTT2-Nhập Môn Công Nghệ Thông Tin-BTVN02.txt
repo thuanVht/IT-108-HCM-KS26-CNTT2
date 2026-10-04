@@ -1,0 +1,11 @@
+1: Nguyên nhân lỗi
+Đường dẫn cũ của Bình là đường dẫn tuyệt đối (Absolute Path) — nó bị gắn chặt với tên máy và ổ đĩa cá nhân của Bình. Khi mở bài trên một máy tính khác, hệ thống không tìm thấy đúng cấu trúc thư mục này nên Python lập tức báo lỗi file không tồn tại.
+
+2: Cách khắc phục (Sử dụng đường dẫn tương đối)
+Để bài làm chạy ổn định trên mọi máy tính mà không cần sửa code, bạn chỉ cần điều chỉnh lại cách tổ chức thư mục như sau:
+
+
+Sắp xếp thư mục: Đặt thư mục chứa ảnh (assets) nằm cùng cấp (ngang hàng) hoặc bên trong thư mục chứa file code (Session-02), tùy theo cách khai báo đường dẫn tương đối (Relative Path) trong bài.
+
+Đóng gói khi nộp bài: Khi nộp hoặc chia sẻ, bạn hãy nén thư mục gốc (thư mục bao bọc cả Session-02 và assets) thay vì chỉ gửi riêng mỗi file code. Nhờ vậy, cấu trúc thư mục luôn được giữ nguyên và file code sẽ luôn tìm thấy ảnh.
+
